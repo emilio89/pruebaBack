@@ -1,0 +1,44 @@
+{
+    "name": "Departamento",
+    "fields": [
+        {
+            "fieldName": "nombreDepartamento",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "empleado",
+            "otherEntityRelationshipName": "departamento",
+            "javadoc": "A relationship",
+            "relationshipName": "empleado"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "tarea",
+            "otherEntityRelationshipName": "departamento",
+            "relationshipName": "tarea",
+            "otherEntityField": "titulo",
+            "ownerSide": true
+        },
+        {
+            "relationshipName": "empresa",
+            "otherEntityName": "empresa",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190706155830",
+    "entityTableName": "departamento",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

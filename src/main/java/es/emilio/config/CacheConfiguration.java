@@ -58,6 +58,14 @@ public class CacheConfiguration {
             createCache(cm, es.emilio.domain.Job.class.getName());
             createCache(cm, es.emilio.domain.Job.class.getName() + ".tasks");
             createCache(cm, es.emilio.domain.JobHistory.class.getName());
+            createCache(cm, es.emilio.domain.Empleado.class.getName());
+            createCache(cm, es.emilio.domain.Departamento.class.getName());
+            createCache(cm, es.emilio.domain.Departamento.class.getName() + ".empleados");
+            createCache(cm, es.emilio.domain.Departamento.class.getName() + ".tareas");
+            createCache(cm, es.emilio.domain.Empresa.class.getName());
+            createCache(cm, es.emilio.domain.Empresa.class.getName() + ".departaments");
+            createCache(cm, es.emilio.domain.Tarea.class.getName());
+            createCache(cm, es.emilio.domain.Tarea.class.getName() + ".departamentos");
             // jhipster-needle-ehcache-add-entry
         };
     }

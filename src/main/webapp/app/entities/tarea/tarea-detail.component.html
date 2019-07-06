@@ -1,0 +1,31 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="tarea">
+            <h2><span jhiTranslate="pruebaBackApp.tarea.detail.title">Tarea</span> {{tarea.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="pruebaBackApp.tarea.titulo">Titulo</span></dt>
+                <dd>
+                    <span>{{tarea.titulo}}</span>
+                </dd>
+                <dt><span jhiTranslate="pruebaBackApp.tarea.descripcion">Descripcion</span></dt>
+                <dd>
+                    <span>{{tarea.descripcion}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/tarea', tarea.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

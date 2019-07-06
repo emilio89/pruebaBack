@@ -1,0 +1,39 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="departamento">
+            <h2><span jhiTranslate="pruebaBackApp.departamento.detail.title">Departamento</span> {{departamento.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="pruebaBackApp.departamento.nombreDepartamento">Nombre Departamento</span></dt>
+                <dd>
+                    <span>{{departamento.nombreDepartamento}}</span>
+                </dd>
+                <dt><span jhiTranslate="pruebaBackApp.departamento.tarea">Tarea</span></dt>
+                <dd>
+                    <span *ngFor="let tarea of departamento.tareas; let last = last">
+                        <a [routerLink]="['/tarea', tarea?.id, 'view' ]">{{tarea.titulo}}</a>{{last ? '' : ', '}}
+                    </span>
+                </dd>
+                <dt><span jhiTranslate="pruebaBackApp.departamento.empresa">Empresa</span></dt>
+                <dd>
+                    <div *ngIf="departamento.empresa">
+                        <a [routerLink]="['/empresa', departamento.empresa?.id, 'view']">{{departamento.empresa?.id}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/departamento', departamento.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+{
+  "pruebaBackApp": {
+    "tarea": {
+      "home": {
+        "title": "Tareas",
+        "createLabel": "Crear novo Tarea",
+        "createOrEditLabel": "Crear ou editar Tarea",
+        "notFound": "No Tarea found"
+      },
+      "created": "Un novo Tarea foi creado co identificador {{ param }}",
+      "updated": "Un Tarea foi actualizado co identificador {{ param }}",
+      "deleted": "Un Tarea foi eliminado co identificador {{ param }}",
+      "delete": {
+        "question": "Seguro que desexa eliminar Tarea {{ id }}?"
+      },
+      "detail": {
+        "title": "Tarea"
+      },
+      "titulo": "Titulo",
+      "descripcion": "Descripcion",
+      "departamento": "Departamento"
+    }
+  }
+}
