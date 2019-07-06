@@ -1,0 +1,45 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "gitCompany": "",
+    "baseName": "pruebaBack",
+    "packageName": "es.emilio",
+    "packageFolder": "es/emilio",
+    "serverPort": 8080,
+    "serviceDiscoveryType": "eureka",
+    "authenticationType": "jwt",
+    "uaaBaseName": "../uaa",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "enableSwaggerCodegen": false,
+    "messageBroker": false,
+    "buildTool": "maven",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "testFrameworks": [
+      "protractor"
+    ],
+    "enableTranslation": true,
+    "nativeLanguage": "es",
+    "languages": [
+      "gl",
+      "es"
+    ],
+    "clientFramework": "angularX",
+    "jhiPrefix": "jhi",
+    "jhipsterVersion": "6.1.2",
+    "jwtSecretKey": "Njc1YjM4MTUzMGY3NDFkZWNjYmExYzZlYjU3YzM4YzIwYTZlNGJmYjljYjVjMGU1OWVkZWNjYmU3NDQzNDFiZjc0MTYxYTk3MDIzNzkxY2EzZGQ4OTZkMTQyMmIyMzkyNzdlNGQzNTk4NmJlZTJjNzMzYmUxMTNmYTgzY2YwOTI=",
+    "clientTheme": "none",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": []
+  },
+  "git-provider": "GitHub",
+  "git-company": "emilio89",
+  "repository-name": "pruebaBack"
+}
