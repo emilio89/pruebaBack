@@ -1,0 +1,60 @@
+
+
+
+entity Empleado {	
+    idEmpleado Long required
+	nombre String
+    salario Integer
+    apellido String
+    
+}
+
+entity Departamento {
+	nombreDepartamento String required
+}
+
+
+entity Empresa {
+	nombreEmpresa String
+}
+
+entity Tarea {
+	titulo String,
+	descripcion String
+}
+
+
+enum Language {
+    SPANISH, GALICIAN
+}
+
+relationship ManyToMany {
+	Departamento{tarea(titulo)} to Tarea{departamento}
+}
+
+// defining multiple OneToMany relationships with comments
+relationship OneToMany {
+	/**
+	* A relationship
+	*/
+	Departamento{empleado} to
+	/**
+	* Another side of the same relationship
+	*/
+	Empleado,
+    Empresa {departament} to Departamento
+}
+
+
+
+// Set pagination options
+paginate Empleado, Departamento,Tarea with pagination
+
+// Use Data Transfert Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
