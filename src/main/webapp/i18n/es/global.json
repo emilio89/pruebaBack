@@ -15,6 +15,10 @@
         "employee": "Employee",
         "job": "Job",
         "jobHistory": "Job History",
+        "empleado": "Empleado",
+        "departamento": "Departamento",
+        "empresa": "Empresa",
+        "tarea": "Tarea",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

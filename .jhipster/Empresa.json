@@ -1,0 +1,26 @@
+{
+    "name": "Empresa",
+    "fields": [
+        {
+            "fieldName": "nombreEmpresa",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "departamento",
+            "otherEntityRelationshipName": "empresa",
+            "relationshipName": "departament"
+        }
+    ],
+    "changelogDate": "20190706155831",
+    "entityTableName": "empresa",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

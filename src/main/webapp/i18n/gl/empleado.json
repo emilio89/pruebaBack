@@ -1,0 +1,26 @@
+{
+  "pruebaBackApp": {
+    "empleado": {
+      "home": {
+        "title": "Empleados",
+        "createLabel": "Crear novo Empleado",
+        "createOrEditLabel": "Crear ou editar Empleado",
+        "notFound": "No Empleado found"
+      },
+      "created": "Un novo Empleado foi creado co identificador {{ param }}",
+      "updated": "Un Empleado foi actualizado co identificador {{ param }}",
+      "deleted": "Un Empleado foi eliminado co identificador {{ param }}",
+      "delete": {
+        "question": "Seguro que desexa eliminar Empleado {{ id }}?"
+      },
+      "detail": {
+        "title": "Empleado"
+      },
+      "idEmpleado": "Id Empleado",
+      "nombre": "Nombre",
+      "salario": "Salario",
+      "apellido": "Apellido",
+      "departamento": "Departamento"
+    }
+  }
+}

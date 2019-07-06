@@ -1,0 +1,25 @@
+{
+  "pruebaBackApp": {
+    "departamento": {
+      "home": {
+        "title": "Departamentos",
+        "createLabel": "Crear novo Departamento",
+        "createOrEditLabel": "Crear ou editar Departamento",
+        "notFound": "No Departamento found"
+      },
+      "created": "Un novo Departamento foi creado co identificador {{ param }}",
+      "updated": "Un Departamento foi actualizado co identificador {{ param }}",
+      "deleted": "Un Departamento foi eliminado co identificador {{ param }}",
+      "delete": {
+        "question": "Seguro que desexa eliminar Departamento {{ id }}?"
+      },
+      "detail": {
+        "title": "Departamento"
+      },
+      "nombreDepartamento": "Nombre Departamento",
+      "empleado": "Empleado",
+      "tarea": "Tarea",
+      "empresa": "Empresa"
+    }
+  }
+}

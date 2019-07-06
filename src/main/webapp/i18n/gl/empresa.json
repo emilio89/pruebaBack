@@ -1,0 +1,23 @@
+{
+  "pruebaBackApp": {
+    "empresa": {
+      "home": {
+        "title": "Empresas",
+        "createLabel": "Crear novo Empresa",
+        "createOrEditLabel": "Crear ou editar Empresa",
+        "notFound": "No Empresa found"
+      },
+      "created": "Un novo Empresa foi creado co identificador {{ param }}",
+      "updated": "Un Empresa foi actualizado co identificador {{ param }}",
+      "deleted": "Un Empresa foi eliminado co identificador {{ param }}",
+      "delete": {
+        "question": "Seguro que desexa eliminar Empresa {{ id }}?"
+      },
+      "detail": {
+        "title": "Empresa"
+      },
+      "nombreEmpresa": "Nombre Empresa",
+      "departament": "Departament"
+    }
+  }
+}

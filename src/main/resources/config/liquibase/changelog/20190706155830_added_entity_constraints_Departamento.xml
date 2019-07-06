@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <!--
+        Added the constraints for entity Departamento.
+    -->
+    <changeSet id="20190706155830-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="departamento_id"
+                                 baseTableName="departamento_tarea"
+                                 constraintName="fk_departamento_tarea_departamento_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="departamento"/>
+
+        <addForeignKeyConstraint baseColumnNames="tarea_id"
+                                 baseTableName="departamento_tarea"
+                                 constraintName="fk_departamento_tarea_tarea_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="tarea"/>
+        
+        <addForeignKeyConstraint baseColumnNames="empresa_id"
+                                 baseTableName="departamento"
+                                 constraintName="fk_departamento_empresa_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="empresa"/>
+
+    </changeSet>
+</databaseChangeLog>
