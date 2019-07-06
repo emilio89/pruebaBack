@@ -1,0 +1,24 @@
+{
+  "pruebaBackApp": {
+    "task": {
+      "home": {
+        "title": "Tasks",
+        "createLabel": "Crear novo Task",
+        "createOrEditLabel": "Crear ou editar Task",
+        "notFound": "No Task found"
+      },
+      "created": "Un novo Task foi creado co identificador {{ param }}",
+      "updated": "Un Task foi actualizado co identificador {{ param }}",
+      "deleted": "Un Task foi eliminado co identificador {{ param }}",
+      "delete": {
+        "question": "Seguro que desexa eliminar Task {{ id }}?"
+      },
+      "detail": {
+        "title": "Task"
+      },
+      "title": "Title",
+      "description": "Description",
+      "job": "Job"
+    }
+  }
+}
